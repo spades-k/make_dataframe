@@ -48,5 +48,5 @@ for j in range(0, x, BATCH_SIZE):
     dfa = pd.merge(dfa, df, how='outer')
     print('txt', j+BATCH_SIZE, 'done')
 # 保存成.csv格式
-df.to_csv('dftest.csv', index=None)
-print(df)
+dfa.to_csv('dftraining.csv', index=None)
+print(dfa)
